@@ -4,7 +4,7 @@
 
 #include "PtyConsole.h"
 
-#if defined(ARDULINUX_PLATFORM) || defined(LINUX_PLATFORM) || defined(MESHCORE_HOST_TEST)
+#if defined(ARDULINUX_PLATFORM) || defined(LINUX_PLATFORM)
 
 #include <stdlib.h>
 #include <fcntl.h>
@@ -133,4 +133,4 @@ size_t PtyConsole::write(uint8_t c) {
     return 1;
 }
 
-#endif // ARDULINUX_PLATFORM || LINUX_PLATFORM || MESHCORE_HOST_TEST
+#endif // ARDULINUX_PLATFORM || LINUX_PLATFORM

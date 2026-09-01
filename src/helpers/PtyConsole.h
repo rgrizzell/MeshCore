@@ -1,9 +1,6 @@
 #pragma once
 
-// MESHCORE_HOST_TEST enables this engine in the host unit-test env without
-// claiming a real platform macro (LINUX_PLATFORM is used by the native-shim
-// port).
-#if defined(ARDULINUX_PLATFORM) || defined(LINUX_PLATFORM) || defined(MESHCORE_HOST_TEST)
+#if defined(ARDULINUX_PLATFORM) || defined(LINUX_PLATFORM)
 
 #include <stddef.h>
 #include <stdint.h>
@@ -54,4 +51,4 @@ public:
     }
 };
 
-#endif // ARDULINUX_PLATFORM || LINUX_PLATFORM || MESHCORE_HOST_TEST
+#endif // ARDULINUX_PLATFORM || LINUX_PLATFORM
